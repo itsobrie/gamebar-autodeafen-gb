@@ -1,0 +1,61 @@
+{
+  "geode": "4.10.0",
+  "gd": {
+    "win": "2.2074"
+  },
+  "name": "Gamebar Autodeafen",
+  "version": "v1.3.1",
+  "developer": "itsobrie",
+  "id": "itsobrie.gamebar-autodeafen-gb",
+  "description": "Mutes Xbox Game Bar party chat (XboxPartyChatHost.exe) at a chosen percent, then automatically unmutes on death, completion, pause, restart, or exit. Includes an in-game pause-menu config for adjusting deafen/undeafen percents.\n\nBased on the original 'AutoDeafen' mod by Lynxdeer. Built with assistance from ChatGPT.",
+  "tags": ["enhancement", "utility"],
+  "repository": "https://github.com/itsobrie/gamebar-autodeafen",
+  "early-load": true,
+  "settings": {
+    "Enabled by Default": {
+      "type": "bool",
+      "default": false,
+      "description": "Whether Gamebar Autodeafen is <co>enabled by default</c> when you load into a level for the first time. Basically enables it globally rather than per-level."
+    },
+    "Default Percentage": {
+      "control": { "input": true },
+      "type": "int",
+      "default": 50,
+      "min": 0,
+      "max": 100,
+      "description": "Legacy setting from the original mod. Not used by Gamebar Autodeafen logic anymore."
+    },
+    "Enabled in Practice Mode": {
+      "type": "bool",
+      "default": false,
+      "description": "Whether Gamebar Autodeafen should be enabled during practice mode."
+    },
+    "Additional Debugging": {
+      "type": "bool",
+      "default": false,
+      "description": "Whether you want additional logging (for debugging). May cause extra log spam when exiting a level."
+    },
+    "Deafen Percent": {
+      "control": { "input": true },
+      "type": "int",
+      "default": 0,
+      "min": 0,
+      "max": 100,
+      "description": "Percent at which to MUTE XboxPartyChatHost.exe. 0 = disabled."
+    },
+    "Undeafen Percent": {
+      "control": { "input": true },
+      "type": "int",
+      "default": 100,
+      "min": 0,
+      "max": 100,
+      "description": "Percent at which to UNMUTE after being muted."
+    }
+  },
+  "dependencies": {
+    "geode.node-ids": {
+      "version": ">=v1.12.0",
+      "importance": "required"
+    }
+  }
+}
