@@ -9,7 +9,7 @@
   "id": "itsobrie.gamebar-autodeafen-gb",
   "description": "Mutes Xbox Game Bar party chat (XboxPartyChatHost.exe) at a chosen percent, then automatically unmutes on death, completion, pause, restart, or exit. Includes an in-game pause-menu config for adjusting deafen/undeafen percents.\n\nBased on the original 'AutoDeafen' mod by Lynxdeer. Built with assistance from ChatGPT.",
   "tags": ["enhancement", "utility"],
-  "repository": "https://github.com/itsobrie/gamebar-autodeafen",
+  "repository": "https://github.com/itsobrie/gamebar-autodeafen-gb",
   "early-load": true,
   "settings": {
     "Enabled by Default": {
