@@ -5,14 +5,14 @@
   "version": "v1.3.1",
   "developer": "itsobrie",
   "id": "itsobrie.gamebar-autodeafen-gb",
-  "description": "Mutes Xbox Game Bar party chat at a chosen percent, then auto-unmutes on pause, death, completion, restart, or exit. Includes pause-menu controls and full Geode settings.",
+  "description": "Mutes GameBAr at a %. Full controls in Geode.",
   "tags": ["enhancement", "utility"],
   "repository": "https://github.com/itsobrie/gamebar-autodeafen-gb",
   "early-load": true,
   "settings": {
     "Enabled by Default": {
       "type": "bool",
-      "default": false,
+      "default": true,
       "description": "Enable the mod automatically on each level load."
     },
     "Enabled in Practice Mode": {
@@ -20,13 +20,18 @@
       "default": false,
       "description": "Enable autodeafen in practice mode."
     },
+    "Enabled in StartPos":{
+      "type": "bool",
+      "default": true,
+      "description": "Allow autodeafen when using a start position."
+    },
     "Deafen Percent": {
       "control": { "input": true },
       "type": "int",
       "default": 0,
       "min": 0,
       "max": 100,
-      "description": "Percent at which to mute XboxPartyChatHost.exe."
+      "description": "Percent at which to mute."
     },
     "Undeafen Percent": {
       "control": { "input": true },
@@ -44,3 +49,4 @@
     }
   }
 }
+
