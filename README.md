@@ -17,8 +17,7 @@ Gamebar Autodeafen is a Geode mod for Geometry Dash  that automatically mutes Xb
 
 ## Credits
 
-Original AutoDeafen concept and frame by Lynxdeer
-Written and created by itsobrie
-Development assistance provided by ChatGPT
-Custom icons created for this project
+- Original AutoDeafen concept and frame by Lynxdeer
+- Written and created by itsobrie
+- Development assistance provided by ChatGPT (Custom icons created for this project)
 
