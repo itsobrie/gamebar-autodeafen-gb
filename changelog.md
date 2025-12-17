@@ -1,0 +1,3 @@
+# Changelog
+## <cg>v1.0.0</c>
+* Initial Release
