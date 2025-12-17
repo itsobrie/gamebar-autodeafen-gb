@@ -2,7 +2,7 @@
   "geode": "4.10.0",
   "gd": { "win": "2.2074" },
   "name": "Gamebar Autodeafen",
-  "version": "v1.3.1",
+  "version": "v1.0.0",
   "developer": "itsobrie",
   "id": "itsobrie.gamebar-autodeafen-gb",
   "description": "Mutes GameBAr at a %. Full controls in Geode.",
@@ -13,11 +13,11 @@
     "Enabled by Default": {
       "type": "bool",
       "default": true,
-      "description": "Enable the mod automatically on each level load."
+      "description": "Enable the mod automatically on each level load.\n\nIMPORTANT: If this setting is DISABLED, the mod will NOT load in the pause menu."
     },
     "Enabled in Practice Mode": {
       "type": "bool",
-      "default": false,
+      "default": true,
       "description": "Enable autodeafen in practice mode."
     },
     "Enabled in StartPos":{
@@ -31,7 +31,7 @@
       "default": 0,
       "min": 0,
       "max": 100,
-      "description": "Percent at which to mute."
+      "description": "Percent at which to mute. 0 = disabled."
     },
     "Undeafen Percent": {
       "control": { "input": true },
