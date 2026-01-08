@@ -421,11 +421,12 @@ protected:
     auto parse = [](std::string const& s, int fallback) {
     if (s.empty()) return fallback;
 
-    if (auto res = geode::utils::numFromString<int>(s)) {
-        return res.unwrap();
+    if (auto n = geode::utils::numFromString<int>(s)) {
+        return *n; 
     }
     return fallback;
 };
+
 
 
 
