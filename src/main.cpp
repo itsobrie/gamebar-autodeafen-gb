@@ -12,6 +12,7 @@
 #include <Geode/modify/PlayLayer.hpp>
 #include <Geode/modify/PauseLayer.hpp>
 #include <Geode/modify/PlayerObject.hpp>
+#include <Geode/utils/string.hpp>
 
 #include <cocos2d.h>
 #include <Geode/binding/CCMenuItemSpriteExtra.hpp>
@@ -418,13 +419,13 @@ protected:
 
     void onClose(CCObject* sender) override {
     auto parse = [](std::string const& s, int fallback) {
-        try {
-            if (s.empty()) return fallback;
-            return std::stoi(s);
-        } catch (...) {
-            return fallback;
-        }
-    };
+    if (s.empty()) return fallback;
+
+    if (auto res = geode::utils::numFromString<int>(s)) {
+        return res.unwrap();
+    }
+    return fallback;
+};
 
 
 
