@@ -2,10 +2,10 @@
   "geode": "4.10.0",
   "gd": { "win": "2.2074" },
   "name": "Gamebar Autodeafen",
-  "version": "v1.0.0",
+  "version": "v1.0.2",
   "developer": "itsobrie",
   "id": "itsobrie.gamebar-autodeafen-gb",
-  "description": "Mutes GameBAr at a %. Full controls in Geode.",
+  "description": "Mutes GameBar at a %. Full controls in Geode.",
   "tags": ["enhancement", "utility"],
   "repository": "https://github.com/itsobrie/gamebar-autodeafen-gb",
   "early-load": true,
@@ -49,4 +49,5 @@
     }
   }
 }
+
 
