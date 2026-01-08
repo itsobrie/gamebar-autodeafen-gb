@@ -1,8 +1,9 @@
 # Changelog
 ## <cg>v1.0.1</c>
 
-* Bug Fix
+* GitHub Actions build
 
 ## <cg>v1.0.0</c>
 
 * Initial Release
+
